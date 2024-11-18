@@ -1,0 +1,82 @@
+* {
+    scroll-behavior: smooth;
+}
+
+ul {
+    display: flex;
+    justify-content: right;
+    gap: 70px;
+    position: sticky;
+    margin: 2rem;
+    transition: transform .3s;
+    list-style: none;
+}
+
+ul :hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+li {
+    text-decoration: none;
+}
+
+.logo {
+    margin: 0px;
+    width: 100px;
+    position: sticky;
+    left: 2rem;
+    top: 2rem;
+}
+
+header {
+    background-image: url(/assets/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: var(--text-off-white);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* scroll menu layout */
+div.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+/* scroll menu linkjes + inhoud */
+div.scrollmenu a {
+    background-image: url(assets/workshop.webp);
+    display: inline-block;
+    color: var(--text-darkgreen);
+    text-align: center;
+    padding: 50px;
+    text-decoration: none;
+    width: 400px;
+    transition: transform .3s;
+    margin: 15px;
+}
+
+/* scroll menu  */
+div.scrollmenu a:hover {
+    color: var(--orange);
+    transform: scale(1.1);
+}

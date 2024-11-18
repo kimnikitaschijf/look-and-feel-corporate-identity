@@ -1,0 +1,55 @@
+* {
+    background-color: lightpink;
+    scroll-behavior: smooth;
+}
+
+/* blokje van de bieb
+.bieb-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: var(--main-color-beige);
+    color: var(--main-color-green);
+    border-radius: 15px;
+    max-width: 1600px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: 400;
+    margin-top: -80px;
+
+    /* layout van bieb */
+    /* .content {
+        width: 50%;
+    } */
+
+    /* titel bieb */
+    /* h1 {
+        font-size: 5.5em;
+        color: var(--main-color-green);
+        margin-bottom: 20px;
+        font-weight: bold;
+    } */
+
+    /* tekst in bieb */
+    /* p {
+        font-size: 1em;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        padding: 40px;
+        color: var(--main-color-green);
+    } */
+
+    /* plaatje layout */
+    /* .image-container {
+        width: 45%;
+    } */
+
+    /* plaatje instellingen */
+    /* .image-container img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        object-fit: cover;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    } */
