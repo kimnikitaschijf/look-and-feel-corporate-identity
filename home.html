@@ -7,26 +7,28 @@
     <title>Home</title>
     <link rel="stylesheet" href="https://kimnikitaschijf.github.io/look-and-feel-styleguide/biebinbloei.css">
     <link rel="stylesheet" href="home.css">
+    <!-- <link rel="icon" href="assets/fav-icon-bieb-in-bloei.png" type="image/x-icon"/> -->
 </head>
 
 <body>
     <header>
+        <div class="overlay"></div>
         <a><img src="assets/Logo (1).svg" alt="Bieb in Bloei" class="logo" href="home.html"></a>
         <ul>
             <li><a href="Stekjes">Stekjes</a></li>
             <li><a href="Zaden">Zaden</a></li>
             <li><a href="Geveltuin">Geveltuin</a></li>
-            <li><a href="GroeneBieb">Groene Bieb</a></li>
+            <li><a href="index.html">Groene Bieb</a></li>
             <li><a href="Agenda">Agenda</a></li>
             <li><a href="Contact">Contact</a></li>
         </ul>
-        <h1>Samen Groener Leven!</h1>
+        <h1>Samen<span>Groener</span>Leven!</h1>
         <h2>Ruilen | Leren | Inspireren</h2>
     </header>
 
     <main>
-        <section>
-            <div>
+        <section class="blok-stekjeskast">
+            <div class="content">
                 <h2>Onze stekjeskast</h2>
                 <p>Ons eerste Bieb in Bloei project is de stekjeskast gemaakt door kinderen uit de buurt bij de
                     Maakplaats
@@ -37,14 +39,14 @@
                     Kom vooral een kijkje nemen want soms brengen buurtbewoners heel bijzondere stekjes! Neem je eigen
                     stekje mee van thuis om deze te ruilen.</p>
             </div>
-            <!-- button toevoegen -->
-            <div>
-                <img src="assets/stekjeskast.jpg" alt="stekjeskast">
+            <!-- <button class="knopstekjeskast">Lees meer</button>  -->
+            <div class="image-container">
+                <img src="assets/stekjesbiebimg.svg" alt="stekjeskast">
             </div>
         </section>
 
-        <section>
-            <div>
+        <section class="blok-zadenbieb">
+            <div class="content">
                 <h2>Onze zadenbieb</h2>
                 <p>Ons tweede Bieb in Bloei project is de Zadenbieb. Deze zal eind 2024 gemaakt worden door kinderen uit
                     de buurt bij de Maakplaats in OBA Javaplein. Tijdens het Zaaifeest in maart 2025 zal er een
@@ -54,13 +56,13 @@
                 </p>
             </div>
             <!-- butten!! -->
-            <div>
-                <img src="assets/green.jpg" alt="GroeneBieb">
+            <div class="image-container">
+                <img src="assets/zadenbiebimg.svg" alt="zadenbieb">
             </div>
         </section>
 
-        <section>
-            <div>
+        <section class="blok-geveltuin">
+            <div class="content">
                 <h2>Onze geveltuin</h2>
                 <p>Ons derde Bieb in Bloei project is de geveltuin aan de voorkant van OBA Linnaeus; twee jaar geleden
                     aangevraagd door de inmiddels afgestudeerde Bestuurskunde student Mert. Sindsdien organiseren onze
@@ -72,13 +74,13 @@
                 </p>
             </div>
             <!-- button toevoegen -->
-            <div>
-                <img src="assets/stekjeskast.jpg" alt="stekjeskast">
+            <div class="image-container">
+                <img src="assets/geveltuin2.jpg" alt="geveltuin">
             </div>
         </section>
 
-        <section>
-            <div>
+        <section class="blok-groenebieb">
+            <div class="content">
                 <h2>Onze groene bieb</h2>
                 <p>De Groene Bibliotheek is een roulerende minibibliotheek met boeken over alles wat met groen,
                     biodiversiteit en gezondheid te maken heeft. De boeken zijn alleen ter inzage en komen uit de Groene
@@ -89,27 +91,37 @@
                 </p>
             </div>
             <!-- button toevoegen -->
-            <div>
-                <img src="assets/stekjeskast.jpg" alt="stekjeskast">
+            <div class="image-container">
+                <img src="assets/GroeneBibliotheek.jpg" alt="GroeneBieb">
             </div>
         </section>
 
-        <section>
-            <h2>Buurtcampus Oost</h2>
-            <p>
-                De Buurtcampus is een leeromgeving opgezet door de Hogeschool van Amsterdam (HvA) in samenwerking met de
-                Openbare Bibliotheek van Amsterdam (OBA). Met drie Buurtcampussen in verschillende stadsdelen richten
-                wij ons op actuele uitdagingen in de wijken van Amsterdam.
-                De Buurtcampus heeft vestigingen in OBA Geuzenveld (Nieuw-West), OBA Linnaeus (Oost) en OBA Ganzenhoef
-                (Zuidoost). Dit zijn toegankelijke plekken waar studenten projecten en buurtactiviteiten ontwikkelen en
-                uitvoeren, en waar onderzoekers aansluiting vinden bij hun wijkgerichte vragen.
-                Hier ontmoeten de HvA en de wijk elkaar om opgedane kennis in de praktijk te brengen en buurten
-                inclusiever, veiliger, gezonder, groener en socialer te maken.
-            </p>
+        <section class="buurtcampus">
+            <div class="content">
+                <h2>Buurtcampus<span class="highlight">Oost</span></h2>
+                <p>
+                    De Buurtcampus is een leeromgeving opgezet door de Hogeschool van Amsterdam (HvA) in samenwerking
+                    met de
+                    Openbare Bibliotheek van Amsterdam (OBA). Met drie Buurtcampussen in verschillende stadsdelen
+                    richten
+                    wij ons op actuele uitdagingen in de wijken van Amsterdam.
+                    De Buurtcampus heeft vestigingen in OBA Geuzenveld (Nieuw-West), OBA Linnaeus (Oost) en OBA
+                    Ganzenhoef
+                    (Zuidoost). Dit zijn toegankelijke plekken waar studenten projecten en buurtactiviteiten ontwikkelen
+                    en
+                    uitvoeren, en waar onderzoekers aansluiting vinden bij hun wijkgerichte vragen.
+                    Hier ontmoeten de HvA en de wijk elkaar om opgedane kennis in de praktijk te brengen en buurten
+                    inclusiever, veiliger, gezonder, groener en socialer te maken.<strong>Meer informatie? Klik
+                        hieronder!</strong>
+                </p>
+            </div>
+            <div class="shape-container">
+                <img src="assets/harry blij.gif" alt="Harry">
+            </div>
             <!-- button! -->
         </section>
 
-        <section>
+        <section class="agendablok">
             <h2>Agenda</h2>
             <div class="scrollmenu">
                 <a href="#agenda">Workshop</a>
@@ -123,21 +135,21 @@
             </div>
         </section>
 
-        <footer>
-            <div>
-                <div>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-column">
                     <h3>Adres:</h3>
                     <p>OBA Linnaeusstraat</p>
                     <p>Linnaeusstraat 44</p>
                     <p>1092 CL Amsterdam</p>
                 </div>
-                <div>
+                <div class="footer-column">
                     <h3>Contact:</h3>
                     <p>buurtcampusoost@hva.nl</p>
                     <p>06 43450198</p>
                     <p>BTW 0055.81.205.B01</p>
                 </div>
-                <div>
+                <div class="footer-column">
                     <h3>Snelkoppelingen:</h3>
                     <ul>
                         <li><a href="#">Home</a></li>

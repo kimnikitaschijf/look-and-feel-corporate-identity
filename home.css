@@ -1,26 +1,38 @@
 * {
     scroll-behavior: smooth;
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* nav lijst layout */
 ul {
+    color: var(--text-off-white);
     display: flex;
     justify-content: right;
     gap: 70px;
     position: sticky;
-    margin: 2rem;
+    margin: 0em 3em 1em 1em;
     transition: transform .3s;
     list-style: none;
+    z-index: 99;
+    text-decoration: none;
 }
 
+/* nav op hover */
 ul :hover {
     transform: scale(1.1);
     text-decoration: underline;
 }
 
+/* nav */
 li {
     text-decoration: none;
+    color: var(--text-off-white);
 }
 
+/* logo plaatje */
 .logo {
     margin: 0px;
     width: 100px;
@@ -29,32 +41,282 @@ li {
     top: 2rem;
 }
 
+/* header */
 header {
-    background-image: url(/assets/background.jpg);
-    background-repeat: no-repeat;
-    background-position: center top;
-    width: 100%;
+    background-image: url(/assets/varen.jpg);
+    background-size: cover;
+    height: 80vh;
+    padding: 0em 0em 5em 0em;
+
+    /* tekst onder titel */
+    h2 {
+        color: var(--text-off-white);
+        z-index: 90;
+        position: relative;
+        text-align: center;
+        padding: 0em 0em 5em 0em;
+    }
 }
 
+/* nav linkjes */
+header a {
+    z-index: 99;
+    position: relative;
+    color: var(--text-off-white);
+    text-decoration: none;
+    font-size: clamp(1rem, 0.9559rem + 0.2353vw, 1.25rem);
+}
+
+/* gradient over background image */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85vh;
+    background: var(--image-gradient);
+    z-index: 90;
+}
+
+/* titel header */
 h1 {
     text-align: center;
     color: var(--text-off-white);
+    padding: 1em 0em 0em 0em;
+    z-index: 99;
+    position: relative;
+    font-size: clamp(4.0625rem, 3.4559rem + 3.2353vw, 7.5rem);
 }
 
+h1 [span] {
+    padding: 20px;
+}
 
+/* layout hele blok */
+.blok-stekjeskast {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: var(--beige);
+    color: var(--lightgreen);
+    border-radius: 15px;
+    min-width: 25rem;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: 400;
+    margin-top: -50px;
+    max-width: 1600px;
 
+    /* titel */
+    h2 {
+        font-size: 5.5em;
+        color: var(--lightgreen);
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-align: left;
+    }
 
+    /* tekst in blokje */
+    p {
+        margin-bottom: 20px;
+        padding: 40px;
+        width: 80%;
+    }
+}
 
+/* layout hele blok */
+.blok-zadenbieb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: var(--orange);
+    color: var(--brown);
+    border-radius: 15px;
+    min-width: 25rem;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: 400;
+    margin-top: 0px;
+    max-width: 1600px;
 
+    /* titels van blokjes */
+    h2 {
+        font-size: 5.5em;
+        color: var(--brown);
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-align: left;
+    }
 
+    /* tekst in blokjes */
+    p {
+        margin-bottom: 20px;
+        padding: 40px;
+        width: 80%;
+    }
+}
 
+/* layout hele blok */
+.blok-geveltuin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: var(--lightgreen);
+    color: var(--beige);
+    border-radius: 15px;
+    min-width: 25rem;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: 400;
+    margin-top: 0px;
+    max-width: 1600px;
 
+    /* titels van blokjes */
+    h2 {
+        font-size: 5.5em;
+        color: var(--beige);
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-align: left;
+    }
 
+    /* tekst in blokjes */
+    p {
+        margin-bottom: 20px;
+        padding: 40px;
+        width: 80%;
+    }
+}
 
+/* layout hele blok */
+.blok-groenebieb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: var(--brown);
+    color: var(--orange);
+    border-radius: 15px;
+    min-width: 25rem;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: 400;
+    margin-top: 0px;
+    max-width: 1600px;
 
+    /* titels van blokjes */
+    h2 {
+        font-size: 5.5em;
+        color: var(--orange);
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-align: left;
+    }
 
+    /* tekst in blokjes */
+    p {
+        margin-bottom: 20px;
+        padding: 40px;
+        width: 80%;
+    }
+}
 
+/* layout tekst in blokjes */
+.content {
+    width: 60%;
+}
 
+/* plaatje instellingen */
+.image-container img {
+    width: 75%;
+    margin: 1em;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* tekst stukje over buurcampus oost */
+.buurtcampus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    color: var(--text-darkgreen);
+    border-radius: 15px;
+    max-width: 1400px;
+    margin: 40px auto;
+    position: relative;
+    overflow: hidden;
+
+    /* layout buurtcampus */
+    .content {
+        width: 65%;
+    }
+
+    /* titel kopje buurtcampus */
+    h2 {
+        font-size: 5em;
+        color: var(--text-darkgreen);
+        margin-bottom: 20px;
+    }
+
+    /* Oranje kleur voor oost */
+    .highlight {
+        color: var(--orange);
+        font-size: 5rem;
+        padding: 20px;
+    }
+
+    /* tekst */
+    p {
+        font-size: 1em;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        color: var(--text-darkgreen);
+        padding: 20px;
+    }
+
+    /* Sterke tekstkleur 'klik hier' */
+    p strong {
+        color: var(--main-color-green);
+    }
+
+    /* foto */
+    .shape-container {
+        width: 25%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        overflow: hidden;
+    }
+
+    /* foto */
+    .shape-container img {
+        width: 400px;
+        height: auto;
+        object-fit: cover;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+    }
+}
+
+/* layout hele stuk */
+.agendablok {
+    background-color: var(--darkgreen);
+    padding: 50px;
+    position: relative;
+
+    /* titel kopje */
+    h2 {
+        color: var(--beige);
+        font-weight: 700;
+    }
+}
 
 /* scroll menu layout */
 div.scrollmenu {
@@ -64,19 +326,77 @@ div.scrollmenu {
 
 /* scroll menu linkjes + inhoud */
 div.scrollmenu a {
-    background-image: url(assets/workshop.webp);
+    background-image: url(/assets/greenworkshop.jpg);
+    z-index: 99;
     display: inline-block;
-    color: var(--text-darkgreen);
+    color: var(--beige);
     text-align: center;
-    padding: 50px;
+    padding: 60px;
     text-decoration: none;
     width: 400px;
     transition: transform .3s;
     margin: 15px;
+    border-radius: 15px;
+
 }
 
 /* scroll menu  */
 div.scrollmenu a:hover {
     color: var(--orange);
     transform: scale(1.1);
+}
+
+/* footer */
+.footer {
+    background-color: var(--beige);
+    padding: 1rem;
+    position: relative;
+
+    /* instellingen 3 stukjes tekst */
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* instellingen tekst rij */
+    .footer-column {
+        flex: 1;
+        text-align: center;
+    }
+
+    /* titel kopjes footer */
+    .footer-column h3 {
+        font-size: 1.5rem;
+        color: var(--text-darkgreen);
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    /* tekst in footer */
+    .footer-column p,
+    .footer-column a {
+        font-size: 1rem;
+        color: var(--text-darkgreen);
+        margin-bottom: 1rem;
+        text-decoration: none;
+    }
+
+    /* rijtjes in footer */
+    .footer-column ul {
+        list-style-type: none;
+        display: block;
+    }
+
+    /* layout footer tekst */
+    .footer-column ul li {
+        margin-bottom: 1em;
+    }
+
+    /* linkjes on hover */
+    .footer-column ul li a:hover {
+        text-decoration: underline;
+        color: var(--orange);
+    }
 }

@@ -1,55 +1,93 @@
 * {
-    background-color: lightpink;
     scroll-behavior: smooth;
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* blokje van de bieb
-.bieb-section {
+/* nav lijst layout */
+ul {
+    color: var(--text-off-white);
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px;
-    background-color: var(--main-color-beige);
-    color: var(--main-color-green);
-    border-radius: 15px;
-    max-width: 1600px;
-    margin: 40px auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-weight: 400;
-    margin-top: -80px;
+    justify-content: right;
+    gap: 70px;
+    position: sticky;
+    margin: 0em 3em 1em 1em;
+    transition: transform .3s;
+    list-style: none;
+    z-index: 99;
+    text-decoration: none;
+}
 
-    /* layout van bieb */
-    /* .content {
-        width: 50%;
-    } */
+/* nav op hover */
+ul :hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
 
-    /* titel bieb */
-    /* h1 {
-        font-size: 5.5em;
-        color: var(--main-color-green);
-        margin-bottom: 20px;
-        font-weight: bold;
-    } */
+/* nav */
+li {
+    text-decoration: none;
+    color: var(--text-off-white);
+}
 
-    /* tekst in bieb */
-    /* p {
-        font-size: 1em;
-        line-height: 1.6;
-        margin-bottom: 20px;
-        padding: 40px;
-        color: var(--main-color-green);
-    } */
+/* logo plaatje */
+.logo {
+    margin: 0px;
+    width: 100px;
+    position: sticky;
+    left: 2rem;
+    top: 2rem;
+}
 
-    /* plaatje layout */
-    /* .image-container {
-        width: 45%;
-    } */
+/* header */
+header {
+    background-image: url(/assets/varen.jpg);
+    background-size: cover;
+    height: 80vh;
+    padding: 0em 0em 5em 0em;
 
-    /* plaatje instellingen */
-    /* .image-container img {
-        width: 100%;
-        height: auto;
-        border-radius: 20px;
-        object-fit: cover;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    } */
+    /* tekst onder titel */
+    h2 {
+        color: var(--text-off-white);
+        z-index: 90;
+        position: relative;
+        text-align: center;
+        padding: 0em 0em 5em 0em;
+    }
+}
+
+/* nav linkjes */
+header a {
+    z-index: 99;
+    position: relative;
+    color: var(--text-off-white);
+    text-decoration: none;
+    font-size: clamp(1rem, 0.9559rem + 0.2353vw, 1.25rem);
+}
+
+/* gradient over background image */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85vh;
+    background: var(--image-gradient);
+    z-index: 90;
+}
+
+/* titel header */
+h1 {
+    text-align: center;
+    color: var(--text-off-white);
+    padding: 1em 0em 0em 0em;
+    z-index: 99;
+    position: relative;
+    font-size: clamp(4.0625rem, 3.4559rem + 3.2353vw, 7.5rem);
+}
+
+h1 [span] {
+    padding: 20px;
+}
