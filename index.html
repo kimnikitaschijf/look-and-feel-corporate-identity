@@ -5,14 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Groene Bieb</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://kimnikitaschijf.github.io/look-and-feel-styleguide/biebinbloei.css">
+    <link rel="icon" href="assets/flower.png" type="image/x-icon"/>
 </head>
 
+<!-- <a href="https://www.flaticon.com/free-icons/botanical" title="botanical icons"> -->
 <body>
     <header>
         <div class="overlay"></div>
-        <!-- <a><img src="assets/Logo (1).svg" alt="Bieb in Bloei" class="logo" href="home.html"></a> -->
+
+        <a href="home.html"><img src="/assets/Logo (1).svg" alt="home" class="logo"></a>
+        
         <ul>
             <li><a href="Stekjes">Stekjes</a></li>
             <li><a href="Zaden">Zaden</a></li>
@@ -27,9 +31,9 @@
 
 
     <main>
-        <section>
-            <div>
-                <h1>Onze groene bieb</h1>
+        <section class="blok-groenebieb">
+            <div class="content">
+                <h2>Onze groene bieb</h2>
                 <p>De Groene Bibliotheek is een roulerende minibibliotheek met boeken over alles wat met groen,
                     biodiversiteit en gezondheid te maken heeft. De boeken zijn alleen ter inzage en komen uit de Groene
                     Bibliotheek van de Motuinkamer in Tugela85. Deze belangrijke buurtpartner opent elke zaterdagochtend
@@ -40,14 +44,14 @@
                     bepaalde
                     thema weken.</p>
             </div>
-            <div>
-                <img src="assets/green.jpg" alt="GroeneBieb">
+            <div class="image-container">
+                <img src="assets/GroeneBibliotheek.jpg" alt="GroeneBieb">
             </div>
         </section>
 
-        <section>
-            <div>
-                <h1>Onze partners</h1>
+        <section class="blok-partners">
+            <div class="content">
+                <h2>Onze partners</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et
                     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -66,7 +70,7 @@
                     deserunt mollit anim id est laborum.</p>
             </div>
 
-            <div>
+            <div class="photo-grid">
                 <div class="photo"></div>
                 <div class="photo"></div>
                 <div class="photo"></div>
@@ -79,9 +83,9 @@
             </div>
         </section>
 
-        <section>
-            <div>
-                <h2>Samenwerken<span>?</span></h2>
+        <section class="samenwerken">
+            <div class="content">
+                <h2>Samenwerken<span class="highlight">?</span></h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et
                     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -102,27 +106,26 @@
                     minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea
                     commodi consequatur?</p>
             </div>
-            <div>
+            <div class="shape-container">
                 <img src="assets/harry blij.gif" alt="Harry">
             </div>
         </section>
 
-
-        <footer>
-            <div>
-                <div>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-column">
                     <h3>Adres:</h3>
                     <p>OBA Linnaeusstraat</p>
                     <p>Linnaeusstraat 44</p>
                     <p>1092 CL Amsterdam</p>
                 </div>
-                <div>
+                <div class="footer-column">
                     <h3>Contact:</h3>
                     <p>buurtcampusoost@hva.nl</p>
                     <p>06 43450198</p>
                     <p>BTW 0055.81.205.B01</p>
                 </div>
-                <div>
+                <div class="footer-column">
                     <h3>Snelkoppelingen:</h3>
                     <ul>
                         <li><a href="#">Home</a></li>

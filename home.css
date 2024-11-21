@@ -14,7 +14,7 @@ ul {
     gap: 70px;
     position: sticky;
     margin: 0em 3em 1em 1em;
-    transition: transform .3s;
+    transition: transform .3s ease-in-out;
     list-style: none;
     z-index: 99;
     text-decoration: none;

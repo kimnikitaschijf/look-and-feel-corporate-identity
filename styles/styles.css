@@ -14,7 +14,7 @@ ul {
     gap: 70px;
     position: sticky;
     margin: 0em 3em 1em 1em;
-    transition: transform .3s;
+    transition: transform .3s ease-in-out;
     list-style: none;
     z-index: 99;
     text-decoration: none;
@@ -39,11 +39,17 @@ li {
     position: sticky;
     left: 2rem;
     top: 2rem;
+    transition: transform .3s ease-in-out;
 }
+
+.logo :hover {
+    transform: scale(1.1);
+}
+
 
 /* header */
 header {
-    background-image: url(/assets/varen.jpg);
+    background-image: url(/assets/wp11667512-monstera-leaf-wallpapers.jpg);
     background-size: cover;
     height: 80vh;
     padding: 0em 0em 5em 0em;
@@ -90,4 +96,230 @@ h1 {
 
 h1 [span] {
     padding: 20px;
+}
+
+
+/* layout hele blok */
+.blok-groenebieb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: var(--beige);
+    color: var(--lightgreen);
+    border-radius: 15px;
+    min-width: 25rem;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: 400;
+    margin-top: -50px;
+    max-width: 1600px;
+
+    /* titel */
+    h2 {
+        font-size: 5.5em;
+        color: var(--lightgreen);
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    /* tekst in blokje */
+    p {
+        margin-bottom: 20px;
+        padding: 40px;
+        width: 80%;
+    }
+}
+
+/* layout hele blok */
+.blok-partners {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: var(--lightgreen);
+    color: var(--beige);
+    border-radius: 15px;
+    min-width: 25rem;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: 400;
+    margin-top: 0px;
+    max-width: 1600px;
+
+    /* titels van blokjes */
+    h2 {
+        font-size: 5.5em;
+        color: var(--beige);
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    /* tekst in blokjes */
+    p {
+        margin-bottom: 20px;
+        padding: 40px;
+        width: 80%;
+    }
+
+    /* logo's grid */
+    .photo-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 60px;
+        width: 45%;
+        padding: 20px;
+    }
+
+    /* logo's instellingen */
+    .photo {
+        background-color: var(--darkgreen);
+        border-radius: 10px;
+        height: 150px;
+        /* Plaats hier een achtergrondafbeelding wanneer je een foto toevoegt */
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* logo's on hover */
+    .photo:hover {
+        opacity: 0.8;
+    }
+}
+
+/* layout tekst in blokjes */
+.content {
+    width: 60%;
+}
+
+/* plaatje instellingen */
+.image-container img {
+    width: 75%;
+    margin: 1em;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* tekst stukje over samenwerken */
+.samenwerken {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    color: var(--text-darkgreen);
+    border-radius: 15px;
+    max-width: 1400px;
+    margin: 40px auto;
+    position: relative;
+    overflow: hidden;
+
+    /* layout samenwerken */
+    .content {
+        width: 80%;
+    }
+
+    /* titel kopje samenwerken */
+    h2 {
+        font-size: 5em;
+        color: var(--card-color-green);
+        margin-bottom: 20px;
+    }
+
+    /* Oranje kleur voor het vraagteken */
+    .highlight {
+        color: var(--card-color-orange);
+        font-size: 4rem;
+    }
+
+    /* tekst samenwerken */
+    p {
+        font-size: 1em;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        color: var(--card-color-green);
+        padding: 20px;
+    }
+
+    /* Sterke tekstkleur 'klik hier' */
+    p strong {
+        color: var(--main-color-green);
+    }
+
+    /* foto */
+    .shape-container {
+        width: 25%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        overflow: hidden;
+    }
+
+    /* foto */
+    .shape-container img {
+        width: 500px;
+        height: auto;
+        object-fit: cover;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+/* footer */
+.footer {
+    background-color: var(--beige);
+    padding: 1rem;
+    position: relative;
+
+    /* instellingen 3 stukjes tekst */
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* instellingen tekst rij */
+    .footer-column {
+        flex: 1;
+        text-align: center;
+    }
+
+    /* titel kopjes footer */
+    .footer-column h3 {
+        font-size: 1.5rem;
+        color: var(--text-darkgreen);
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    /* tekst in footer */
+    .footer-column p,
+    .footer-column a {
+        font-size: 1rem;
+        color: var(--text-darkgreen);
+        margin-bottom: 1rem;
+        text-decoration: none;
+    }
+
+    /* rijtjes in footer */
+    .footer-column ul {
+        list-style-type: none;
+        display: block;
+    }
+
+    /* layout footer tekst */
+    .footer-column ul li {
+        margin-bottom: 1em;
+    }
+
+    /* linkjes on hover */
+    .footer-column ul li a:hover {
+        text-decoration: underline;
+        color: var(--orange);
+    }
 }
