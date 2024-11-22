@@ -8,7 +8,7 @@
 
 /* nav lijst layout */
 ul {
-    color: var(--text-off-white);
+    color: var(--primary-text-color);
     display: flex;
     justify-content: right;
     gap: 70px;
@@ -29,7 +29,7 @@ ul :hover {
 /* nav */
 li {
     text-decoration: none;
-    color: var(--text-off-white);
+    color: var(--primary-text-color);
 }
 
 /* logo plaatje */
@@ -46,7 +46,6 @@ li {
     transform: scale(1.1);
 }
 
-
 /* header */
 header {
     background-image: url(../assets/wp11667512-monstera-leaf-wallpapers.jpg);
@@ -56,7 +55,7 @@ header {
 
     /* tekst onder titel */
     h2 {
-        color: var(--text-off-white);
+        color: var(--primary-text-color);
         z-index: 90;
         position: relative;
         text-align: center;
@@ -68,7 +67,7 @@ header {
 header a {
     z-index: 99;
     position: relative;
-    color: var(--text-off-white);
+    color: var(--primary-text-color);
     text-decoration: none;
     font-size: clamp(1rem, 0.9559rem + 0.2353vw, 1.25rem);
 }
@@ -87,7 +86,7 @@ header a {
 /* titel header */
 .titel {
     text-align: center;
-    color: var(--text-off-white);
+    color: var(--primary-text-color);
     padding: 1em 0em 0em 0em;
     z-index: 99;
     position: relative;
@@ -98,96 +97,64 @@ h1 [span] {
     padding: 20px;
 }
 
-
 /* layout hele blok */
-.blok-groenebieb {
+.blok-groenebieb, .blok-partners {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px;
-    background-color: var(--beige);
-    color: var(--lightgreen);
     border-radius: 15px;
     min-width: 25rem;
     margin: 30px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-weight: 400;
-    margin-top: -50px;
     max-width: 1600px;
-
-    /* titel */
-    h2 {
-        font-size: 5.5em;
-        color: var(--lightgreen);
-        margin-bottom: 20px;
-        font-weight: bold;
-        text-align: left;
-    }
-
-    /* tekst in blokje */
-    p {
-        margin-bottom: 20px;
-        padding: 40px;
-        width: 80%;
-    }
 }
 
-/* layout hele blok */
+.blok-groenebieb {
+    background-color: var(--primary-background-color);
+    color: var(--secondary-background-color);
+    margin-top: -50px;
+}
+
 .blok-partners {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px;
-    background-color: var(--lightgreen);
-    color: var(--beige);
-    border-radius: 15px;
-    min-width: 25rem;
-    margin: 30px auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-weight: 400;
+    background-color: var(--secondary-background-color);
+    color: var(--primary-background-color);
     margin-top: 0px;
-    max-width: 1600px;
+}
 
-    /* titels van blokjes */
-    h2 {
-        font-size: 5.5em;
-        color: var(--beige);
-        margin-bottom: 20px;
-        font-weight: bold;
-        text-align: left;
-    }
+.blok-groenebieb h2, .blok-partners h2 {
+    font-size: 5.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: left;
+}
 
-    /* tekst in blokjes */
-    p {
-        margin-bottom: 20px;
-        padding: 40px;
-        width: 80%;
-    }
+.blok-groenebieb p, .blok-partners p {
+    margin-bottom: 20px;
+    padding: 40px;
+    width: 80%;
+}
 
-    /* logo's grid */
-    .photo-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        gap: 60px;
-        width: 45%;
-        padding: 20px;
-    }
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 60px;
+    width: 45%;
+    padding: 20px;
+}
 
-    /* logo's instellingen */
-    .photo {
-        background-color: var(--darkgreen);
-        border-radius: 10px;
-        height: 150px;
-        /* Plaats hier een achtergrondafbeelding wanneer je een foto toevoegt */
-        background-size: cover;
-        background-position: center;
-    }
+.photo {
+    background-color: var(--third-background-color);
+    border-radius: 10px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+}
 
-    /* logo's on hover */
-    .photo:hover {
-        opacity: 0.8;
-    }
+.photo:hover {
+    opacity: 0.8;
 }
 
 /* layout tekst in blokjes */
@@ -209,117 +176,121 @@ h1 [span] {
     justify-content: space-between;
     align-items: center;
     padding: 40px;
-    color: var(--text-darkgreen);
+    color: var(--secondary-text-color);
     border-radius: 15px;
     max-width: 1400px;
     margin: 40px auto;
     position: relative;
     overflow: hidden;
+}
 
-    /* layout samenwerken */
-    .content {
-        width: 80%;
-    }
+.samenwerken h2 {
+    font-size: 5em;
+    margin-bottom: 20px;
+}
 
-    /* titel kopje samenwerken */
-    h2 {
-        font-size: 5em;
-        color: var(--card-color-green);
-        margin-bottom: 20px;
-    }
+.samenwerken .highlight {
+    color: var(--primary-highlight-color);
+    font-size: 4rem;
+}
 
-    /* Oranje kleur voor het vraagteken */
-    .highlight {
-        color: var(--card-color-orange);
-        font-size: 4rem;
-    }
+.samenwerken p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding: 20px;
+}
 
-    /* tekst samenwerken */
-    p {
-        font-size: 1em;
-        line-height: 1.6;
-        margin-bottom: 20px;
-        color: var(--card-color-green);
-        padding: 20px;
-    }
+.samenwerken p strong {
+    color: var(--primary-highlight-color);
+}
 
-    /* Sterke tekstkleur 'klik hier' */
-    p strong {
-        color: var(--main-color-green);
-    }
-
-    /* foto */
-    .shape-container {
-        width: 25%;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        top: 0;
-        overflow: hidden;
-    }
-
-    /* foto */
-    .shape-container img {
-        width: 500px;
-        height: auto;
-        object-fit: cover;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-    }
+.shape-container img {
+    width: 500px;
+    height: auto;
+    object-fit: cover;
 }
 
 /* footer */
 .footer {
-    background-color: var(--beige);
+    background-color: var(--primary-background-color);
     padding: 1rem;
-    position: relative;
+}
 
-    /* instellingen 3 stukjes tekst */
-    .footer-container {
-        display: flex;
-        justify-content: space-around;
-        max-width: 1200px;
-        margin: 0 auto;
+.footer .footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .footer-column {
+    flex: 1;
+    text-align: center;
+}
+
+.footer .footer-column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer .footer-column p, .footer .footer-column a {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
+
+.footer .footer-column ul {
+    list-style-type: none;
+}
+
+.footer .footer-column ul li {
+    margin-bottom: 1em;
+}
+
+.footer .footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+
+/* Tablet (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    ul {
+        flex-direction: column;
+        gap: 10px;
     }
+    .blok-groenebieb, .blok-partners {
+        flex-direction: column;
+    }
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .samenwerken {
+        flex-direction: column;
+    }
+    .image-container img {
+        width: 90%;
+    }
+    header h1, .blok-groenebieb h2, .blok-partners h2 {
+        font-size: 3rem;
+    }
+}
 
-    /* instellingen tekst rij */
-    .footer-column {
-        flex: 1;
+/* Mobile (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    ul {
+        display: none;
+    }
+    header h1, .blok-groenebieb h2, .blok-partners h2 {
+        font-size: 2rem;
+    }
+    .footer .footer-container {
+        flex-direction: column;
         text-align: center;
     }
-
-    /* titel kopjes footer */
-    .footer-column h3 {
-        font-size: 1.5rem;
-        color: var(--text-darkgreen);
-        margin-bottom: 20px;
-        font-weight: bold;
-    }
-
-    /* tekst in footer */
-    .footer-column p,
-    .footer-column a {
-        font-size: 1rem;
-        color: var(--text-darkgreen);
-        margin-bottom: 1rem;
-        text-decoration: none;
-    }
-
-    /* rijtjes in footer */
-    .footer-column ul {
-        list-style-type: none;
-        display: block;
-    }
-
-    /* layout footer tekst */
-    .footer-column ul li {
-        margin-bottom: 1em;
-    }
-
-    /* linkjes on hover */
-    .footer-column ul li a:hover {
-        text-decoration: underline;
-        color: var(--orange);
+    .photo-grid {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
