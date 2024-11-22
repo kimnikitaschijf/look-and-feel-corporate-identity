@@ -43,7 +43,7 @@ li {
 
 /* header */
 header {
-    background-image: url(/assets/varen.jpg);
+    background-image: url(./assets/varen.jpg);
     background-size: cover;
     height: 80vh;
     padding: 0em 0em 5em 0em;
