@@ -85,7 +85,7 @@ header a {
 }
 
 /* titel header */
-h1 {
+.titel {
     text-align: center;
     color: var(--text-off-white);
     padding: 1em 0em 0em 0em;

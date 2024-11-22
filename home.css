@@ -326,7 +326,7 @@ div.scrollmenu {
 
 /* scroll menu linkjes + inhoud */
 div.scrollmenu a {
-    background-image: url(/assets/greenworkshop.jpg);
+    background-image: url(./assets/greenworkshop.jpg);
     z-index: 99;
     display: inline-block;
     color: var(--beige);
