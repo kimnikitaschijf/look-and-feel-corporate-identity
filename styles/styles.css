@@ -288,7 +288,7 @@ h1 [span] {
     }
 
     .photo-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 2fr);
     }
 
     .samenwerken {
