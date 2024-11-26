@@ -39,7 +39,7 @@ li {
     position: sticky;
     left: 2rem;
     top: 2rem;
-    transition: transform .3s ease-in-out;
+    transition: transform .3s;
 }
 
 .logo :hover {
@@ -98,54 +98,55 @@ h1 [span] {
 }
 
 /* layout hele blok */
-.blok-groenebieb, .blok-partners {
+.blok {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 30px;
     border-radius: 15px;
+    min-width: 25rem;
     margin: 30px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-weight: 400;
-    max-width: 1600px;
+    margin-top: -20px;
+    max-width: 1400px;
 }
 
-.blok-groenebieb {
-    background-color: var(--primary-background-color);
-    color: var(--secondary-background-color);
-    margin-top: -50px;
-}
-
-.blok-partners {
-    background-color: var(--secondary-background-color);
-    color: var(--primary-background-color);
-    margin-top: 0px;
-}
-
-.blok-groenebieb h2, .blok-partners h2 {
-    font-size: 5.5em;
+.kleur1,
+.kleur2 {
+    font-size: 2.5em;
     margin-bottom: 20px;
     font-weight: bold;
     text-align: left;
 }
 
-.blok-groenebieb p, .blok-partners p {
-    margin-bottom: 20px;
-    padding: 40px;
-    width: 80%;
+.kleur1 {
+    color: var(--secondary-background-color);
+}
+
+.kleur2 {
+    color: var(--primary-background-color);
+}
+
+.tekstkleur1 {
+    color: var(--secondary-background-color);
+}
+
+.tekstkleur2 {
+    color: var(--primary-background-color);
 }
 
 .photo-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 60px;
-    width: 45%;
+    gap: 50px;
+    width: 40%;
     padding: 20px;
 }
 
 .photo {
-    background-color: var(--third-background-color);
+    background-image: url(/assets/Bieb+in+Bloei+logo+1.png);
+    transition: transform .3s;
     border-radius: 10px;
     height: 150px;
     background-size: cover;
@@ -154,16 +155,17 @@ h1 [span] {
 
 .photo:hover {
     opacity: 0.8;
+    transform: scale(1.1);
 }
 
 /* layout tekst in blokjes */
 .content {
-    width: 60%;
+    width: 80%;
 }
 
 /* plaatje instellingen */
 .image-container img {
-    width: 75%;
+    width: 80%;
     margin: 1em;
     border-radius: 15px;
     object-fit: cover;
@@ -183,42 +185,48 @@ h1 [span] {
 }
 
 .samenwerken h2 {
-    font-size: 5em;
-    margin-bottom: 20px;
+    font-size: clamp(2.1875rem, 1.392rem + 2.6515vw, 4.375rem);
+    color: var(--secondary-text-color);
+    margin-bottom: 2%;
 }
 
 .samenwerken .highlight {
     color: var(--primary-highlight-color);
-    font-size: 4rem;
+    font-size: clamp(2.1875rem, 1.392rem + 2.6515vw, 4.375rem);
 }
 
 .samenwerken p {
     font-size: 1em;
     line-height: 1.6;
-    margin-bottom: 20px;
-    padding: 20px;
+    margin-bottom: 10;
+    color: var(--secondary-text-color);
+    padding: 1%;
 }
 
 .samenwerken p strong {
-    color: var(--primary-highlight-color);
+    color: var(--third-background-color);
 }
 
 .shape-container img {
-    width: 500px;
+    width: 70%;
     height: auto;
     object-fit: cover;
+    position: sticky;
+    right: 0;
+    bottom: 0;
 }
 
 /* footer */
 .footer {
     background-color: var(--primary-background-color);
     padding: 1rem;
+    position: relative;
 }
 
 .footer .footer-container {
     display: flex;
     justify-content: space-around;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -229,18 +237,23 @@ h1 [span] {
 
 .footer .footer-column h3 {
     font-size: 1.5rem;
+    color: var(--secondary-text-color);
     margin-bottom: 20px;
     font-weight: bold;
 }
 
-.footer .footer-column p, .footer .footer-column a {
+.footer .footer-column p,
+.footer .footer-column a {
     font-size: 1rem;
+    color: var(--third-background-color);
     margin-bottom: 1rem;
     text-decoration: none;
 }
 
 .footer .footer-column ul {
     list-style-type: none;
+    display: block;
+    text-align: center;
 }
 
 .footer .footer-column ul li {
@@ -249,44 +262,73 @@ h1 [span] {
 
 .footer .footer-column ul li a:hover {
     text-decoration: underline;
+    color: var(--primary-highlight-color);
 }
 
 /* Media Queries */
-
 /* Tablet (max-width: 768px) */
 @media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 3rem;
+        padding-top: 10rem;
+    }
+
     ul {
-        display: none;
+        text-align: right;
+        gap: 20px;
     }
-    .blok-groenebieb, .blok-partners {
+
+    .blok {
         flex-direction: column;
+        margin: 20px auto;
     }
-    .photo-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .samenwerken {
-        flex-direction: column;
-    }
+
     .image-container img {
         width: 90%;
     }
-    header h1, .blok-groenebieb h2, .blok-partners h2 {
+
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .samenwerken {
+        flex-direction: column;
+    }
+
+    .samenwerken .shape-container {
+        width: 100%;
+    }
+
+    header h1,
+    h2 {
         font-size: 3rem;
     }
 }
 
 /* Mobile (max-width: 480px) */
 @media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+        padding-top: 20rem;
+    }
+    
     ul {
         display: none;
     }
-    header h1, .blok-groenebieb h2, .blok-partners h2 {
+
+    .blok {
+        margin: 10px auto;
+    }
+
+    h2 {
         font-size: 2rem;
     }
+  
     .footer .footer-container {
         flex-direction: column;
         text-align: center;
     }
+
     .photo-grid {
         grid-template-columns: repeat(1, 1fr);
     }
