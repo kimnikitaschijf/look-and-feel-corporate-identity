@@ -245,11 +245,11 @@ div.scrollmenu a {
     color: var(--primary-background-color);
     text-align: center;
     margin: 0;
-    padding: 10%;
+    padding: 5%;
     text-decoration: none;
-    width: 50%;
+    width: 25%;
     transition: transform .3s;
-    margin: 15px;
+    margin: 10px;
     border-radius: 15px;
 }
 
