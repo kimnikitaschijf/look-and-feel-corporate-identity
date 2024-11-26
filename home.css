@@ -184,7 +184,8 @@ p {
 
 /* titel kopje buurtcampus */
 .buurtcampus h2 {
-    font-size: clamp(2.1875rem, 1.392rem + 2.6515vw, 4.375rem);;
+    font-size: clamp(2.1875rem, 1.392rem + 2.6515vw, 4.375rem);
+    ;
     color: var(--secondary-text-color);
     margin-bottom: 2%;
 }
@@ -294,6 +295,7 @@ div.scrollmenu a:hover {
 .footer .footer-column ul {
     list-style-type: none;
     display: block;
+    text-align: center;
 }
 
 .footer .footer-column ul li {
@@ -311,11 +313,12 @@ div.scrollmenu a:hover {
 @media screen and (max-width: 768px) {
     header h1 {
         font-size: 3rem;
-        padding-top: 15rem;
+        padding-top: 10rem;
     }
 
     ul {
-        display: none;
+        text-align: right;
+        gap: 20px;
     }
 
     .blok {
@@ -341,7 +344,6 @@ div.scrollmenu a:hover {
         width: 50%;
         margin: 15px;
     }
-
 }
 
 /* Mobile (max-width: 480px) */
