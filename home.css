@@ -334,6 +334,14 @@ div.scrollmenu a:hover {
     .buurtcampus .shape-container {
         width: 100%;
     }
+
+    div.scrollmenu a {
+        margin: 0;
+        padding: 10%;
+        width: 50%;
+        margin: 15px;
+    }
+
 }
 
 /* Mobile (max-width: 480px) */
@@ -357,6 +365,13 @@ div.scrollmenu a:hover {
 
     h2 {
         font-size: 2rem;
+    }
+
+    div.scrollmenu a {
+        margin: 0;
+        padding: 10%;
+        width: 50%;
+        margin: 15px;
     }
 
     .footer .footer-container {
