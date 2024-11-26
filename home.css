@@ -108,17 +108,47 @@ h1 span {
 }
 
 /* titels van blokjes */
-.kleur1, .kleur2, .kleur3, .kleur4 {
+.kleur1,
+.kleur2,
+.kleur3,
+.kleur4 {
     font-size: 2.5em;
     margin-bottom: 20px;
     font-weight: bold;
     text-align: left;
 }
 
-.kleur1 { color: var(--secondary-background-color); }
-.kleur2 { color: var(--secondary-highlight-color); }
-.kleur3 { color: var(--primary-background-color); }
-.kleur4 { color: var(--primary-highlight-color); }
+.kleur1 {
+    color: var(--secondary-background-color);
+}
+
+.kleur2 {
+    color: var(--secondary-highlight-color);
+}
+
+.kleur3 {
+    color: var(--primary-background-color);
+}
+
+.kleur4 {
+    color: var(--primary-highlight-color);
+}
+
+.tekstkleur1 {
+    color: var(--secondary-background-color);
+}
+
+.tekstkleur2 {
+    color: var(--secondary-highlight-color);
+}
+
+.tekstkleur3 {
+    color: var(--primary-background-color);
+}
+
+.tekstkleur4 {
+    color: var(--primary-highlight-color);
+}
 
 /* tekst in blokje */
 p {
@@ -132,7 +162,7 @@ p {
 
 /* plaatje instellingen */
 .image-container img {
-    width: 75%;
+    width: 80%;
     margin: 1em;
     border-radius: 15px;
     object-fit: cover;
@@ -146,7 +176,7 @@ p {
     padding: 40px;
     color: var(--secondary-text-color);
     border-radius: 15px;
-    max-width: 1400px;
+    max-width: 100%;
     margin: 40px auto;
     position: relative;
     overflow: hidden;
@@ -154,37 +184,37 @@ p {
 
 /* titel kopje buurtcampus */
 .buurtcampus h2 {
-    font-size: 5em;
+    font-size: clamp(2.1875rem, 1.392rem + 2.6515vw, 4.375rem);;
     color: var(--secondary-text-color);
-    margin-bottom: 20px;
+    margin-bottom: 2%;
 }
 
 .buurtcampus .highlight {
     color: var(--primary-highlight-color);
-    font-size: 5rem;
-    padding: 20px;
+    font-size: clamp(2.1875rem, 1.392rem + 2.6515vw, 4.375rem);
+    padding: 2%;
 }
 
 /* tekst buurtcampus */
 .buurtcampus p {
     font-size: 1em;
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 10;
     color: var(--secondary-text-color);
-    padding: 20px;
+    padding: 1%;
 }
 
 /* Sterke tekstkleur 'klik hier' */
 .buurtcampus p strong {
-    color: var(--main-color-green); 
+    color: var(--main-color-green);
 }
 
 /* foto buurtcampus */
 .shape-container img {
-    width: 400px;
+    width: 70%;
     height: auto;
     object-fit: cover;
-    position: absolute;
+    position: sticky;
     right: 0;
     bottom: 0;
 }
@@ -192,7 +222,8 @@ p {
 /* layout hele stuk */
 .agendablok {
     background-color: var(--third-background-color);
-    padding: 50px;
+    margin: 50;
+    padding: 1%;
     position: relative;
 }
 
@@ -212,9 +243,10 @@ div.scrollmenu a {
     display: inline-block;
     color: var(--primary-background-color);
     text-align: center;
-    padding: 60px;
+    margin: 0;
+    padding: 10%;
     text-decoration: none;
-    width: 400px;
+    width: 50%;
     transition: transform .3s;
     margin: 15px;
     border-radius: 15px;
@@ -235,7 +267,7 @@ div.scrollmenu a:hover {
 .footer .footer-container {
     display: flex;
     justify-content: space-around;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -279,21 +311,26 @@ div.scrollmenu a:hover {
 @media screen and (max-width: 768px) {
     header h1 {
         font-size: 3rem;
+        padding-top: 15rem;
     }
+
     ul {
-        flex-direction: column;
-        gap: 10px;
+        display: none;
     }
+
     .blok {
         flex-direction: column;
         margin: 20px auto;
     }
+
     .image-container img {
         width: 90%;
     }
+
     .buurtcampus {
         flex-direction: column;
     }
+
     .buurtcampus .shape-container {
         width: 100%;
     }
@@ -302,14 +339,26 @@ div.scrollmenu a:hover {
 /* Mobile (max-width: 480px) */
 @media screen and (max-width: 480px) {
     header h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        padding-top: 15rem;
     }
+
+    header h2 {
+        font-size: 1.8rem;
+    }
+
     ul {
         display: none;
     }
+
     .blok {
         margin: 10px auto;
     }
+
+    h2 {
+        font-size: 2rem;
+    }
+
     .footer .footer-container {
         flex-direction: column;
         text-align: center;

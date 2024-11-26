@@ -104,7 +104,6 @@ h1 [span] {
     align-items: center;
     padding: 30px;
     border-radius: 15px;
-    min-width: 25rem;
     margin: 30px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-weight: 400;
@@ -178,7 +177,6 @@ h1 [span] {
     padding: 40px;
     color: var(--secondary-text-color);
     border-radius: 15px;
-    max-width: 1400px;
     margin: 40px auto;
     position: relative;
     overflow: hidden;
@@ -258,8 +256,7 @@ h1 [span] {
 /* Tablet (max-width: 768px) */
 @media screen and (max-width: 768px) {
     ul {
-        flex-direction: column;
-        gap: 10px;
+        display: none;
     }
     .blok-groenebieb, .blok-partners {
         flex-direction: column;
