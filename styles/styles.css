@@ -145,7 +145,7 @@ h1 [span] {
 }
 
 .photo {
-    background-image: url(/assets/Bieb+in+Bloei+logo+1.png);
+    background-image: url(../assets/Bieb+in+Bloei+logo+1.png);
     transition: transform .3s;
     border-radius: 10px;
     height: 150px;
