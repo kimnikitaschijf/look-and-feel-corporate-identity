@@ -1,0 +1,1 @@
+let showMoreButton = document.querySelector('.show-more');
